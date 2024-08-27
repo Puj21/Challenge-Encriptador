@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+        <section class="area_encriptacion">
+            <textarea class="encriptacion" rows="20" cols="60" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="mensaje_validacion">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button onclick="botonEncriptar()"; class="boton__encriptar">Cifrar</button>
+                <button onclick="botonDesencriptar()"; class="boton__desencriptar">Descifrar</button>
+            </div>    
+        </section>
+        <section class="area_mensaje">
+            <textarea class="mensaje" rows="20" cols="45" placeholder="Su mensaje encriptado es..."></textarea>
+            <button onclick="copiar()"; class="boton_copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Elaborado por Pedro Ugarte - 2024</p>
+    </footer>
+    <script src="appEncriptacion.js"></script>
+    
+</body>
+</html>
